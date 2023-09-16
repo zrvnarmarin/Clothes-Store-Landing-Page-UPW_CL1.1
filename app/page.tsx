@@ -1,6 +1,9 @@
 import ArrivalsSection from '@/components/arrivals/ArrivalsSection'
+import CommunitySection from '@/components/community/CommunitySection'
 import CompaniesSection from '@/components/companies/CompaniesSection'
+import FavoriteSection from '@/components/favorite/FavoriteSection'
 import HeroSection from '@/components/hero/HeroSection'
+import SaleSection from '@/components/sale/SaleSection'
 import Image from 'next/image'
 
 export default function Home() {
@@ -9,6 +12,9 @@ export default function Home() {
       <HeroSection />
       <CompaniesSection />
       <ArrivalsSection />
+      <SaleSection />
+      <FavoriteSection />
+      <CommunitySection />
     </main>
   )
 }

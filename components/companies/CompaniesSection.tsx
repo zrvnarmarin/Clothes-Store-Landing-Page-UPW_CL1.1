@@ -6,7 +6,6 @@ import LaCoste from '@/public/companies/LaCoste.png'
 import Obey from '@/public/companies/Obey.png'
 import Shopify from '@/public/companies/Shopify.png'
 
-
 export default function CompaniesSection() {
     return (
         <div className="w-full flex flex-row items-center justify-between px-16 py-12 mt-10 mb-12 bg-[#EBD96B]">

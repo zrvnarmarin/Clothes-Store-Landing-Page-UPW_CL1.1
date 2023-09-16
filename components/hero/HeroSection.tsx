@@ -5,9 +5,9 @@ import GirlShopping from '@/public/hero/shoppingGirl.webp'
 
 export default function HeroSection() {
     return (
-        <div className="w-full flex flex-row bg-[#F4F6F5] rounded-3xl p-12">
+        <section className="w-full flex flex-row bg-[#F4F6F5] rounded-3xl p-12">
             <div className="w-2/4 flex flex-col gap-10">
-                <p className="flex flex-col gap-6 font-black text-7xl uppercase text-black">
+                <p className="flex flex-col gap-6 font-black text-8xl uppercase text-black">
                     <span>Let's</span>
                     <span>Explore</span>
                     <span>Unique</span>
@@ -33,6 +33,6 @@ export default function HeroSection() {
                     alt="shopping_girl" 
                 />
             </div>
-        </div>
+        </section>
     )
 }

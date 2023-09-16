@@ -13,20 +13,22 @@ const arrivals = [
 
 export default function ArrivalsSection() {
     return (
-        <div className="flex flex-col gap-14">
+        <div className="flex flex-col gap-14 mb-32">
             <div>
                 <div className="relative">
-                    <p className="z-50 flex flex-col gap-6 font-black text-4xl uppercase text-black">New Arriwals</p>
-                    <div className="z-10 absolute top-0 right-0 ">
+                    <p className="z-50 flex flex-col gap-6 font-black text-4xl uppercase text-black">
+                        New Arriwals
+                    <div className="z-10 absolute top-0 left-0 ">
                         <LeafeArrivalsSection />
                     </div>
+                    </p>
                 </div>
             </div>
             <div className="flex flex-row items-center justify-between gap-16">
                 {arrivals.map(arrival =>
                     <div key={arrival.id} className="flex flex-col gap-8">
                         <div>
-                            <Image src={arrival.src} alt="girl_shopping" height={0} width={0}  />
+                            <Image src={arrival.src} alt="girl_shopping" height={400} width={370}  />
                         </div>
                         <div className="flex flex-row items-center justify-between">
                             <div className="flex flex-col gap-1">
