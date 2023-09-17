@@ -16,12 +16,12 @@ export default function ArrivalsSection() {
         <div className="flex flex-col gap-14 mb-32">
             <div>
                 <div className="relative">
-                    <p className="z-50 flex flex-col gap-6 font-black text-4xl uppercase text-black">
+                    <div className="z-50 flex flex-col gap-6 font-black text-4xl uppercase text-black">
                         New Arriwals
                     <div className="z-10 absolute top-0 left-0 ">
                         <LeafeArrivalsSection />
                     </div>
-                    </p>
+                    </div>
                 </div>
             </div>
             <div className="flex flex-row items-center justify-between gap-16">

@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export default function CommunitySection() {
     return (
-        <section className="w-full flex flex-col items-center gap-4 py-32 mb-28 bg-[#E5C643]">
+        <section className="w-full flex flex-col items-center gap-4 py-32 bg-[#E5C643]">
             <h2 className=" flex flex-col gap-6 font-black text-4xl text-white uppercase">
                 Join shopping community to get monthly promo
             </h2>

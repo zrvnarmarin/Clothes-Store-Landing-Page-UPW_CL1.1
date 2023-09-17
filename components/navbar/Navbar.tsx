@@ -17,7 +17,7 @@ export default function DesktopNavbar() {
                     <div className="flex flex-row items-center justify-between gap-16">
                         {navElemenets.map(navElement => 
                             <li key={navElement.key} className="uppercase text-xl font-normal">
-                                <p>{navElement.text}</p>
+                                <Link href={navElement.href}>{navElement.text}</Link>
                             </li>    
                         )}
                         <li className="uppercase font-medium">
