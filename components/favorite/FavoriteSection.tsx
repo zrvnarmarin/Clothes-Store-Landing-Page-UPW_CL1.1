@@ -16,7 +16,7 @@ export default function FavoriteSection() {
             <div>
                 <div className="relative">
                     <div className="z-50 flex flex-col gap-6 font-black text-4xl text-black">
-                        <p>Young's Favorite</p>
+                        <p>Young&apos;s Favorite</p>
                         <div className="z-10 absolute top-0 left-0 ">
                             <LeafeArrivalsSection />
                         </div>
