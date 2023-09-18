@@ -15,25 +15,25 @@ export default function ArrivalsSection() {
     return (
         <div className="flex flex-col gap-14 mb-32">
             <div>
-                <div className="relative">
-                    <div className="z-50 flex flex-col gap-6 font-black text-4xl uppercase text-black">
+                <div className="relative text-center md:text-start px-2">
+                    <div className="z-50 flex flex-col gap-6 font-black text-3xl sm:text-4xl uppercase text-black">
                         New Arriwals
-                    <div className="z-10 absolute top-0 left-0 ">
+                    <div className="z-10 absolute top-4 left-32 sm:top-6 sm:left-48 ">
                         <LeafeArrivalsSection />
                     </div>
                     </div>
                 </div>
             </div>
-            <div className="flex flex-row items-center justify-between gap-16">
+            <div className="px-2 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center justify-between gap-16">
                 {arrivals.map(arrival =>
                     <div key={arrival.id} className="flex flex-col gap-8">
-                        <div>
-                            <Image src={arrival.src} alt="girl_shopping" height={400} width={370}  />
+                        <div className="w-full">
+                            <Image src={arrival.src} alt="girl_shopping" height={0} width={0}  />
                         </div>
-                        <div className="flex flex-row items-center justify-between">
+                        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-0 justify-between">
                             <div className="flex flex-col gap-1">
                                 <p className="font-medium text-2xl text-[#191919]">{arrival.categoryText}</p>
-                                <p className="font-normal text-lg text-[#7F7F7F]">Explore Now!</p>
+                                <p className="font-normal text-lg text-center sm:text-start text-[#7F7F7F]">Explore Now!</p>
                             </div>
                             <RightArrow />
                         </div>
