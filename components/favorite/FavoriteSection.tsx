@@ -12,29 +12,29 @@ const categories = [
 
 export default function FavoriteSection() {
     return (
-        <section className="w-full flex flex-col gap-14 mb-32 mt-32">
+        <section className="w-full flex flex-col gap-14 mb-32 mt-10 p-2 max-w-screen-lg">
             <div>
-                <div className="relative">
-                    <div className="z-50 flex flex-col gap-6 font-black text-4xl text-black">
-                        <p>Young&apos;s Favorite</p>
-                        <div className="z-10 absolute top-0 left-0 ">
-                            <LeafeArrivalsSection />
-                        </div>
+                <div className="relative text-center md:text-start px-2">
+                    <div className="z-50 flex flex-col gap-6 font-black text-3xl sm:text-4xl uppercase text-black">
+                        Young&apos;s Favorite
+                    <div className="z-10 absolute top-4 left-32 sm:top-6 sm:left-48 ">
+                        <LeafeArrivalsSection />
+                    </div>
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
                 {categories.map(arrival =>
                     <div key={arrival.id} className="flex flex-col gap-8">
-                        <div className="relative w-full bg-red-500">
+                        <div className="">
                             <Image 
                                 src={arrival.src} 
-                                alt={arrival.alt} // Use the alt prop from the data
-                                width={500}
-                                height={300}
-                                layout="responsive" // Use responsive layout
-                                objectFit="cover" // Maintain aspect ratio and cover the container
-                                className="w-full h-96 rounded-2xl"
+                                alt={arrival.alt}
+                                width={0}
+                                height={128} // Set the height to 128 pixels
+                                layout="responsive"
+                                objectFit="cover"
+                                className="h-24 rounded-2xl object-contain"
                             />
                         </div>
                         <div className="flex flex-row items-center justify-between">

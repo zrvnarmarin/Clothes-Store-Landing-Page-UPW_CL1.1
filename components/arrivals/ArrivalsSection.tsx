@@ -13,7 +13,7 @@ const arrivals = [
 
 export default function ArrivalsSection() {
     return (
-        <div className="flex flex-col gap-14 mb-32">
+        <div className="flex flex-col gap-14 mb-8 lg:mb-24">
             <div>
                 <div className="relative text-center md:text-start px-2">
                     <div className="z-50 flex flex-col gap-6 font-black text-3xl sm:text-4xl uppercase text-black">
@@ -24,7 +24,7 @@ export default function ArrivalsSection() {
                     </div>
                 </div>
             </div>
-            <div className="px-2 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center justify-between gap-16">
+            <div className="px-2 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center justify-between gap-12">
                 {arrivals.map(arrival =>
                     <div key={arrival.id} className="flex flex-col gap-8">
                         <div className="w-full">
