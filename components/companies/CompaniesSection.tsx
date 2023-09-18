@@ -8,15 +8,16 @@ import Shopify from '@/public/companies/Shopify.png'
 
 export default function CompaniesSection() {
     return (
-        <div className="w-full flex flex-row items-center justify-between px-16 py-12 mt-10 mb-12 bg-[#EBD96B]">
+        <div className="w-full grid grid-cols-3 md:grid-cols-6 gap-4 justify-items-center itsms-center md:px-16 py-12 mt-10 mb-12 bg-[#EBD96B]">
             {companiesLogos.map(logo =>
-                <div key={logo.id}>
-                    <Image src={logo.src} alt={logo.alt} height={50} width={80} />
+                <div key={logo.id} className='flex items-center justify-center'>
+                    <Image src={logo.src} alt={logo.alt} height={80} width={80} />
                 </div>    
             )}
         </div>
     )
 }
+
 
 const companiesLogos = [
     { id: 1, src: Lewis, alt: 'Lewis_logo' },
