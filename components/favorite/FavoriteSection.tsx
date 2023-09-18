@@ -12,7 +12,7 @@ const categories = [
 
 export default function FavoriteSection() {
     return (
-        <section className="w-full flex flex-col gap-14 mb-32 mt-10 p-2 max-w-screen-lg">
+        <section className="w-full flex flex-col gap-14 mb-16 mt-10 p-2 max-w-screen-lg">
             <div>
                 <div className="relative text-center md:text-start px-2">
                     <div className="z-50 flex flex-col gap-6 font-black text-3xl sm:text-4xl uppercase text-black">
