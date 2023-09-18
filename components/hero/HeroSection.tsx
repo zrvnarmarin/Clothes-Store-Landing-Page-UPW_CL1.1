@@ -5,17 +5,17 @@ import GirlShopping from '@/public/hero/shoppingGirl.webp'
 
 export default function HeroSection() {
     return (
-        <section className="w-full flex flex-row bg-[#F4F6F5] rounded-3xl p-12">
-            <div className="w-2/4 flex flex-col gap-10">
-                <p className="flex flex-col gap-6 font-black text-8xl uppercase text-black">
-                    <span>Let's</span>
-                    <span>Explore</span>
-                    <span>Unique</span>
-                    <span>Clothes.</span>
+        <section className="grid grid-cols-1 md:grid-cols-2 bg-[#F4F6F5] lg:rounded-3xl px-2 py-8 lg:p-12 xl:mx-24">
+            <div className="flex flex-col gap-10">
+                <p className="flex flex-col gap-4 sm:text-center md:text-center lg:gap-6 font-black text-6xl lg:text-8xl uppercase text-black">
+                    Let&apos;s
+                    Explore
+                    Unique
+                    Clothes.
                 </p>
-                <p className="text-2xl text-[#191818]">Live for Influential and Innovative fashion!</p>
-                <div className="flex items-center gap-6">
-                    <LeafeHeroSection />
+                <p className="text-xl md:text-2xl text-center text-[#191818]">Live for Influential and Innovative fashion!</p>
+                <div className="flex items-center justify-center gap-6">
+                    <div className="hidden sm:block"><LeafeHeroSection /></div>
                     <Button 
                         variant={"default"} 
                         className="bg-black text-2xl font-light py-8 px-8"
@@ -24,7 +24,7 @@ export default function HeroSection() {
                     </Button>
                 </div>
             </div>
-            <div className="w-2/4 flex object-cover">
+            <div className="hidden md:flex object-cover">
                 <Image 
                     src={GirlShopping} 
                     className="w-full"
