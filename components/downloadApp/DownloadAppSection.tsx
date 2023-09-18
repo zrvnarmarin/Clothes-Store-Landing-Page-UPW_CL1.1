@@ -24,7 +24,6 @@ export default function DownloadAppSection() {
                 </div>
             </div>
             <div>
-                {/* You can include the MobileApp image here if needed */}
                <Image src={MobileApp} width={100} height={100} alt='Mobile App' /> 
             </div>
         </section>
